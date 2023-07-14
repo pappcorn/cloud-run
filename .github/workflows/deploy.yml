@@ -35,3 +35,6 @@ jobs:
 
       - name: "push"
         run: docker push gcr.io/${{ env.PROJECT_ID }}/test1:${{github.sha}}
+
+      - name: "deploy"
+        run: gcloud run deploy test1 --image gcr.io/${{ env.PROJECT_ID }}/test1:${{github.sha}} --region us-central1

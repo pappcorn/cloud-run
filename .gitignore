@@ -1,0 +1,21 @@
+# Node.js
+node_modules/
+package-lock.json
+
+# WebStorm
+.idea/
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# Compiled output
+dist/
+build/
+out/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
